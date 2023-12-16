@@ -1,0 +1,5 @@
+Name : {amna} Mobile : 03101007555 password :{11223344} Gender : Female DOB : 1/Jan/1995 Address : bahria town phase 8 street 4
+h#4
+Name : {amna} Mobile : 09876 password :{123} Gender : Male DOB : 1/Jan/1995 Address : xcv
+Name : {ll} Mobile : 1 password :{1234} Gender : Male DOB : 1/Jan/1995 Address : 1
+Name : {ammar} Mobile : 000 password :{abc} Gender : Male DOB : 1/Jan/2015 Address : dandsajndas

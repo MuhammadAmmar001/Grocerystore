@@ -1,0 +1,11 @@
+[bowls set  price:2000][forks(6)  price:500][lemons(250g)  price:100][brinjal(1kg)  price:100][butter(250g)  price:200][minced meat(500g)  price:400][glass cleaner  price:100][bath soap  price:70]  DATE:  2022/07/03 23:35:20
+[bowls set  price:2000][forks(6)  price:500][lemons(250g)  price:100][brinjal(1kg)  price:100][butter(250g)  price:200][minced meat(500g)  price:400][glass cleaner  price:100][bath soap  price:70][washing powder(1kg)  price:150][steel pot large  price:800][bowls set  price:2000][spoons(6)  price:500][forks(6)  price:500][plates small(6)  price:1000]  DATE:  2022/07/03 23:39:20
+[bowls set  price:2000][forks(6)  price:500][lemons(250g)  price:100][brinjal(1kg)  price:100][butter(250g)  price:200][minced meat(500g)  price:400][glass cleaner  price:100][bath soap  price:70][washing powder(1kg)  price:150][steel pot large  price:800][bowls set  price:2000][spoons(6)  price:500][forks(6)  price:500][plates small(6)  price:1000]  DATE:  2022/07/03 23:42:00
+[cup set(6)  price:3000][forks(6)  price:500][onion(1kg)  price:100][brinjal(1kg)  price:100][chicken(500g)  price:250][minced meat(500g)  price:400][bath soap  price:70][phenyl(1l)  price:200][bath soap  price:70]  DATE:  2022/07/03 23:57:06
+[cup set(6)  price:3000][dinner set  price:5000][onion(1kg)  price:100][tomatoes(1kg)  price:100][chicken(500g)  price:250][beef(500g)  price:400][phenyl(1l)  price:200][washing powder(1kg)  price:150]  DATE:  2022/07/04 00:02:59
+[plates large(6)  price:1500][steel pot large  price:800]  DATE:  2022/07/12 20:30:35
+  DATE:  2022/07/13 10:45:32
+[steel pot small  price:500]  DATE:  2022/07/13 16:04:17
+[plates large(6)  price:1500][spoons(6)  price:500]  DATE:  2022/07/14 20:16:41
+[steel pot small  price:500]  DATE:  2022/07/14 21:58:16
+[spoons(6)  price:500]  DATE:  2023/12/16 12:23:40

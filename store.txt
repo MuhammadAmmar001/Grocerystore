@@ -1,0 +1,40 @@
+class:item:quantity:price
+crockery:cup set(6):10:3000
+crockery:dinner set:10:5000
+crockery:plates large(6):8:1500
+crockery:plates small(6):10:1000
+crockery:steel pot small:8:500
+crockery:steel pot large:9:800
+crockery:spoons(6):18:500
+crockery:bowls set:10:2000
+crockery:forks(6):20:500
+vegetables:onion(1kg):10:100
+vegetables:tomatoes(1kg):10:100
+vegetables:peas(1kg):10:150
+vegetables:carrot(1kg):10:80
+vegetables:potatoes(1kg):10:50
+vegetables:ladyfingers(1kg):10:150
+vegetables:ginger(250g):20:100
+vegetables:green chilli(250g):20:70
+vegetables:lemons(250g):20:100
+vegetables:brinjal(1kg):10:100
+poultry:chicken(500g):20:250
+poultry:beef(500g):20:400
+poultry:mutton(500g):20:500
+poultry:fish(500g):20:500
+poultry:eggs(6):20:100
+poultry:milk(1litre):20:160
+poultry:cheese(250g):20:200
+poultry:milk cream(250g):20:200
+poultry:butter(250g):20:200
+poultry:minced meat(500g):20:400
+house:phenyl(1l):19:200
+house:washing powder(1kg):20:150
+house:dish cleaner:20:100
+house:broom:20:100
+house:toilet cleaner:20:150
+house:hair brush:20:200
+house:shoe polish:20:50
+house:surface cleaner:20:200
+house:glass cleaner:20:100
+house:bath soap:20:70
