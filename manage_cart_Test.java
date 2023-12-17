@@ -45,7 +45,6 @@ public class manage_cart_Test {
             assertEquals(expectedBill, actualBill);
 
         } catch (Exception e) {
-            // TODO: handle exception
         }
     }
 
