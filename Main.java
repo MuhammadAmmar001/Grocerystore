@@ -18,7 +18,7 @@ class LoginFrame implements ActionListener {
     JLabel pwdRes = new JLabel();
 
     LoginFrame() {
-  
+
         setLayoutManager();
         setLocationAndSize();
         addComponentsToContainer();
