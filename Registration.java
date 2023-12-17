@@ -281,5 +281,3 @@ class Registration extends JFrame implements ActionListener {
     }
     
 }
-
-
