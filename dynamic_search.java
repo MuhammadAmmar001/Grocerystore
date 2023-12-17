@@ -100,9 +100,9 @@ public class dynamic_search implements ActionListener {
     // }
 
     @Override
-    public void actionPerformed(ActionEvent e) {
+    public void actionPerformed(ActionEvent actionEvent) {
 
-        if (e.getSource() == submit) {
+        if (actionEvent.getSource() == submit) {
             dynWindow.remove(label);
 
             searchedProd = new String[200];
@@ -153,7 +153,7 @@ public class dynamic_search implements ActionListener {
                 throw new RuntimeException(ex);
             }
         }
-        if (e.getSource() == addcart) {
+        if (actionEvent.getSource() == addcart) {
             viewCart.setVisible(true);
             File cartItems = new File(
                     "D:\\NUST\\Semester 2\\OOP\\Project\\src\\cart.txt");
@@ -167,7 +167,7 @@ public class dynamic_search implements ActionListener {
                 throw new RuntimeException(ex);
             }
         }
-        if (e.getSource() == viewCart) {
+        if (actionEvent.getSource() == viewCart) {
             try {
                 manage_cart manage_cart = new manage_cart();
                 dynWindow.dispose();
@@ -175,7 +175,7 @@ public class dynamic_search implements ActionListener {
                 throw new RuntimeException(ex);
             }
         }
-        if (e.getSource() == back) {
+        if (actionEvent.getSource() == back) {
             MENU menu = new MENU();
             dynWindow.dispose();
         }
