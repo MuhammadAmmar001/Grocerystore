@@ -14,31 +14,31 @@ class MyFrame
         implements ActionListener {
 
     // Components of the Form
-    private Container c;
-    private JLabel title;
-    private JLabel name;
-    private JTextField tname;
-    private JTextField tpassword;
-    private JLabel password;
-    private JLabel mno;
-    private JTextField tmno;
-    private JLabel gender;
-    private JRadioButton male;
-    private JRadioButton female;
-    private ButtonGroup gengp;
-    private JLabel dob;
-    private JComboBox date;
-    private JComboBox month;
-    private JComboBox year;
-    private JLabel add;
-    private JTextArea tadd;
-    private JCheckBox term;
-    private JButton sub;
-    private JButton reset;
+    public Container c;
+    public JLabel title;
+    public JLabel name;
+    public JTextField tname;
+    public JTextField tpassword;
+    public JLabel password;
+    public JLabel mno;
+    public JTextField tmno;
+    public JLabel gender;
+    public JRadioButton male;
+    public JRadioButton female;
+    public ButtonGroup gengp;
+    public JLabel dob;
+    public JComboBox date;
+    public JComboBox month;
+    public JComboBox year;
+    public JLabel add;
+    public JTextArea tadd;
+    public JCheckBox term;
+    public JButton sub;
+    public JButton reset;
     JTextArea tout;
-    private JLabel res;
-    private JTextArea resadd;
-    private File userFile;
+    public JLabel res;
+    public JTextArea resadd;
+    public File userFile;
 
     public File getUserFile() {
         return userFile;
@@ -247,6 +247,17 @@ class MyFrame
         if (e.getSource() == sub) {
             if (term.isSelected()) {
                 String data1;
+                if (tname.getText().equals("")) {
+                    res.setText("Please enter your name");
+                    return;
+                } else if (tpassword.getText().equals("")) {
+                    res.setText("Password cannot be empty");
+                    return;
+                } else if (tmno.getText().matches(".*[a-zA-Z].*")) {
+                    res.setText("Please enter a valid mobile number");
+                    return;
+                }
+
                 String data = "Name : "
                         + "{" + tname.getText() + "}" + " "
                         + "Mobile : "
@@ -307,5 +318,3 @@ class MyFrame
     }
 
 }
-
-// Driver Code
