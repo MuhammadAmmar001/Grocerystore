@@ -10,3 +10,4 @@
 [steel pot small  price:500]  DATE:  2022/07/14 21:58:16
 [spoons(6)  price:500]  DATE:  2023/12/16 12:23:40
 [milk(1litre)  price:160]  DATE:  2023/12/17 19:51:34
+[brinjal(1kg)  price:100][spoons(6)  price:500]  DATE:  2023/12/18 00:47:53
