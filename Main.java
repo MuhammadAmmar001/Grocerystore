@@ -84,7 +84,7 @@ class LoginFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == createAccount) {
-            MyFrame registration = new MyFrame();
+            Registration registration = new Registration();
 
         }
         if (e.getSource() == loginButton) {
