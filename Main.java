@@ -84,7 +84,7 @@ class LoginFrame implements ActionListener {
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == createAccount) {
-            MyFrame registration = new MyFrame();
+            Registration registration = new Registration();
 
         }
         if (e.getSource() == loginButton) {
@@ -92,7 +92,7 @@ class LoginFrame implements ActionListener {
             String userText;
             String pwdText;
             userText = "{" + userTextField.getText() + "}";
-            pwdText = "{" + String.valueOf(passwordField.getPassword()) + "}"
+            pwdText = "{" + String.valueOf(passwordField.getPassword()) + "}";
             File UserFile = new File(
                     "userfile.txt");
             try {
