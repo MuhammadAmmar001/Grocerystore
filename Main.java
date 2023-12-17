@@ -18,7 +18,7 @@ class LoginFrame implements ActionListener {
     JLabel pwdRes = new JLabel();
 
     LoginFrame() {
-  
+
         setLayoutManager();
         setLocationAndSize();
         addComponentsToContainer();
@@ -92,7 +92,7 @@ class LoginFrame implements ActionListener {
             String userText;
             String pwdText;
             userText = "{" + userTextField.getText() + "}";
-            pwdText = "{" + String.valueOf(passwordField.getPassword()) + "}"
+            pwdText = "{" + String.valueOf(passwordField.getPassword()) + "}";
             File UserFile = new File(
                     "userfile.txt");
             try {
