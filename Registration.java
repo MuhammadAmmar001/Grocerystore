@@ -147,7 +147,6 @@ class Registration extends JFrame implements ActionListener {
         // Set window properties
         setTitle("Registration Form");
         setExtendedState(JFrame.MAXIMIZED_BOTH);
-        setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
