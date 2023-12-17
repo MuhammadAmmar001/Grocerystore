@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.Calendar;
 
 
-public class Registration extends JFrame implements ActionListener {
+class Registration extends JFrame implements ActionListener {
     private JTextField nameTextField, mobileTextField;
     private JPasswordField passwordField;
     private JTextArea addressTextArea, resultTextArea;
@@ -18,11 +18,15 @@ public class Registration extends JFrame implements ActionListener {
     private JButton submitButton, resetButton, BackToLogin;
 
     public Registration() {
+        setVisible(true);
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
         initializeUI();
-      
+    
+        
     }
 
     private void initializeUI() {
+
         Container container = getContentPane();
         container.setLayout(new BorderLayout());
 
@@ -62,6 +66,7 @@ public class Registration extends JFrame implements ActionListener {
         BackToLogin.addActionListener(this);
 
         // Form Layout
+        
         JPanel formPanel = new JPanel(new GridBagLayout());
         GridBagConstraints constraints = new GridBagConstraints();
         constraints.anchor = GridBagConstraints.WEST;
@@ -138,9 +143,10 @@ public class Registration extends JFrame implements ActionListener {
         // Add the background image panel to the container
         container.add(new JScrollPane(resultTextArea), BorderLayout.SOUTH);
 
+        
         // Set window properties
         setTitle("Registration Form");
-        setSize(400, 500);
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
@@ -273,11 +279,7 @@ public class Registration extends JFrame implements ActionListener {
             }
         }
     }
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> {
-            new Registration().setVisible(true);
-        });
-    }
+    
 }
 
 
