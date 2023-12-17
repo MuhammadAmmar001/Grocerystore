@@ -18,7 +18,7 @@ class LoginFrame implements ActionListener {
     JLabel pwdRes = new JLabel();
 
     LoginFrame() {
-        System.out.println("wroks");
+  
         setLayoutManager();
         setLocationAndSize();
         addComponentsToContainer();
@@ -32,7 +32,7 @@ class LoginFrame implements ActionListener {
     }
 
     public void setBackgroundImage() {
-        ImageIcon image = new ImageIcon("D:\\NUST\\Semester 2\\OOP\\Project\\src\\mart.jpg");
+        ImageIcon image = new ImageIcon("mart.jpg");
         label = new JLabel(image);
         label.setBounds(0, 0, 1650, 1080);
         frame.add(label);
@@ -92,11 +92,9 @@ class LoginFrame implements ActionListener {
             String userText;
             String pwdText;
             userText = "{" + userTextField.getText() + "}";
-            System.out.println(userText);
-            pwdText = "{" + String.valueOf(passwordField.getPassword()) + "}";
-            System.out.println(pwdText);
+            pwdText = "{" + String.valueOf(passwordField.getPassword()) + "}"
             File UserFile = new File(
-                    "D:\\NUST\\Semester 2\\OOP\\Project\\src\\userfile.txt");
+                    "userfile.txt");
             try {
                 FileReader userFileReader = new FileReader(UserFile);
                 Scanner userFileScanner = new Scanner(UserFile);
@@ -105,7 +103,7 @@ class LoginFrame implements ActionListener {
                     if (line.contains(userText) && line.contains(pwdText) && !userText.equals("")
                             && !pwdText.equals("")) {
                         File cart = new File(
-                                "D:\\NUST\\Semester 2\\OOP\\Project\\src\\cart.txt");
+                                "cart.txt");
                         FileWriter fileWriter = new FileWriter(cart);
                         status = "SUCCESSFULLY LOGGED IN";
                         MENU menu = new MENU();
