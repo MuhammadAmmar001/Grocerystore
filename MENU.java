@@ -3,19 +3,27 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileNotFoundException;
-
 import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
+/**
+ * Represents a graphical user interface for a grocery store menu.
+ * Provides buttons to access different sections of the store and
+ * functionalities.
+ * Implements ActionListener to handle button click events.
+ */
 public class MENU implements ActionListener {
     JFrame menu;
     JLabel Title;
     JButton crockery, food, poultry, house, history, cart;
     Dimension size = Toolkit.getDefaultToolkit().getScreenSize();
-
     int width = (int) size.getWidth();
-
     int height = (int) size.getHeight();
 
+    /**
+     * Constructor initializing the grocery store menu window with buttons.
+     * Sets up various buttons to access different sections of the store.
+     * Handles button click events for navigation within the store.
+     */
     MENU() {
         menu = new JFrame("MENU");
         menu.setExtendedState(JFrame.MAXIMIZED_BOTH);
@@ -64,10 +72,19 @@ public class MENU implements ActionListener {
 
     }
 
+    /**
+     * Main method to initialize the grocery store menu.
+     *
+     * @param args Command-line arguments (not used here).
+     */
     public static void main(String[] args) {
         MENU menu1 = new MENU();
     }
 
+    /**
+     * Sets the background image for the grocery store menu window.
+     * Loads and sets an image as the background for the menu window.
+     */
     public void setBackgroundImage() {
         ImageIcon image = new ImageIcon("D:\\NUST\\Semester 2\\OOP\\Project\\src\\bg.png");
         JLabel label = new JLabel(image);
@@ -75,12 +92,19 @@ public class MENU implements ActionListener {
         menu.add(label);
     }
 
+    /**
+     * Handles button click events triggered by various store section buttons.
+     * Creates instances of different classes (dynamic_search, manage_cart, history)
+     * based on button clicks.
+     * Disposes of the current menu window after triggering actions.
+     *
+     * @param e ActionEvent triggered by button clicks.
+     */
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == crockery) {
             dynamic_search dynamic_search = new dynamic_search("crockery");
             menu.dispose();
-
         }
         if (e.getSource() == food) {
             dynamic_search dynamic_search = new dynamic_search("vegetables");
@@ -101,7 +125,6 @@ public class MENU implements ActionListener {
             } catch (FileNotFoundException ex) {
                 throw new RuntimeException(ex);
             }
-
         }
         if (e.getSource() == history) {
             try {
@@ -111,6 +134,5 @@ public class MENU implements ActionListener {
                 throw new RuntimeException(ex);
             }
         }
-
     }
 }
