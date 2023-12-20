@@ -2,8 +2,14 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
+/**
+ * Test suite for the Registration class, validating user registration scenarios.
+ */
 public class RegistrationTest {
 
+    /**
+     * Tests if an empty name field triggers the expected error message.
+     */
     @Test
     public void testEmptyNameField() {
         Registration frame = new Registration();
@@ -17,6 +23,9 @@ public class RegistrationTest {
                 frame.resultTextArea.getText());
     }
 
+    /**
+     * Tests if an invalid mobile number triggers the expected error message.
+     */
     @Test
     public void testInvalidMobileNumber() {
         Registration frame = new Registration();
@@ -29,6 +38,9 @@ public class RegistrationTest {
         assertEquals("Please enter a valid 11-digit mobile number.", frame.resultTextArea.getText());
     }
 
+    /**
+     * Tests if an empty password field triggers the expected error message.
+     */
     @Test
     public void testEmptyPasswordField() {
         Registration frame = new Registration();
@@ -43,6 +55,9 @@ public class RegistrationTest {
                 frame.resultTextArea.getText());
     }
 
+    /**
+     * Tests if an empty address field triggers the expected error message.
+     */
     @Test
     public void testEmptyAddress() {
         Registration frame = new Registration();
@@ -55,19 +70,24 @@ public class RegistrationTest {
         assertEquals("Please enter your address.", frame.resultTextArea.getText());
     }
 
+    /**
+     * Tests if not accepting terms triggers the expected error message.
+     */
     @Test
     public void testTermsNotAccepted() {
         Registration frame = new Registration();
         frame.nameTextField.setText("John Doe");
         frame.passwordField.setText("@45aDssd5");
         frame.addressTextArea.setText("123 Main Street");
-
         frame.mobileTextField.setText("12345678922");
         frame.submitButton.doClick();
 
         assertEquals("Please accept the terms and conditions.", frame.resultTextArea.getText());
     }
 
+    /**
+     * Tests a successful registration scenario.
+     */
     @Test
     public void testSuccessfulRegistration() {
         Registration frame = new Registration();
@@ -85,6 +105,9 @@ public class RegistrationTest {
         assertTrue(frame.resultTextArea.getText().contains("Registration Successfully.."));
     }
 
+    /**
+     * Tests if the reset button clears all form fields.
+     */
     @Test
     public void testResetForm() {
         Registration frame = new Registration();

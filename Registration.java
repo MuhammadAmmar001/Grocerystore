@@ -7,7 +7,13 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Calendar;
 
+/**
+ * Represents a registration form for user sign-up.
+ * Allows users to input personal details for registration.
+ */
 class Registration extends JFrame implements ActionListener {
+
+    // Declaration of various form elements
     public JTextField nameTextField, mobileTextField;
     public JPasswordField passwordField;
     public JTextArea addressTextArea, resultTextArea;
@@ -16,15 +22,23 @@ class Registration extends JFrame implements ActionListener {
     public JCheckBox termsCheckBox;
     public JButton submitButton, resetButton, BackToLogin;
 
+    /**
+     * Constructor for the registration form.
+     * Initializes and sets up the user interface elements.
+     */
     public Registration() {
         setVisible(true);
         setExtendedState(JFrame.MAXIMIZED_BOTH);
         initializeUI();
-
     }
 
+    /**
+     * Method to initialize the user interface for the registration form.
+     * Sets up the layout and components of the registration form.
+     */
     private void initializeUI() {
 
+        // Container setup and layout handling
         Container container = getContentPane();
         container.setLayout(new BorderLayout());
 
@@ -63,8 +77,7 @@ class Registration extends JFrame implements ActionListener {
         resetButton.addActionListener(this);
         BackToLogin.addActionListener(this);
 
-        // Form Layout
-
+        // Form layout setup using GridBagLayout
         JPanel formPanel = new JPanel(new GridBagLayout());
         GridBagConstraints constraints = new GridBagConstraints();
         constraints.anchor = GridBagConstraints.WEST;
@@ -146,20 +159,25 @@ class Registration extends JFrame implements ActionListener {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
+    /**
+     * ActionListener implementation to handle button clicks and form submissions.
+     * 
+     * @param e ActionEvent triggered by user interaction.
+     */
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == submitButton) {
             submit();
-
         } else if (e.getSource() == resetButton) {
-
             reset();
         } else if (e.getSource() == BackToLogin) {
             LoginFrame loginFrame = new LoginFrame();
         }
-
     }
 
+    /**
+     * Resets all form fields to their initial empty state.
+     */
     private void reset() {
         nameTextField.setText("");
         mobileTextField.setText("");
@@ -175,6 +193,10 @@ class Registration extends JFrame implements ActionListener {
         resultTextArea.setText("");
     }
 
+    /**
+     * Handles form submission, validates user inputs, and displays registration details.
+     * Processes user inputs for registration and writes the data to a file.
+     */
     private void submit() {
         // Clear Result Area
         resultTextArea.setText("");
@@ -251,16 +273,29 @@ class Registration extends JFrame implements ActionListener {
         processRegistration();
     }
 
+    /**
+     * Validates the mobile number input.
+     * @param mobile Mobile number string to be validated.
+     * @return True if the mobile number is a valid 11-digit number; otherwise, false.
+     */
     private boolean isValidMobileNumber(String mobile) {
         return mobile.matches("\\d{11}");
     }
 
+    /**
+     * Validates the strength of the password input.
+     * @param password Password string to be validated.
+     * @return True if the password meets the specified criteria; otherwise, false.
+     */
     private boolean isValidPassword(String password) {
-
         return password.length() >= 8 && password.matches(".*[A-Z].*") && password.matches(".*[a-z].*")
                 && password.matches(".*[^a-zA-Z0-9].*");
     }
 
+    /**
+     * Processes the registration by collecting form data and writing it to a file.
+     * Displays the registration details in the resultTextArea.
+     */
     private void processRegistration() {
         if (termsCheckBox.isSelected()) {
             String data1;
@@ -301,5 +336,4 @@ class Registration extends JFrame implements ActionListener {
             }
         }
     }
-
 }

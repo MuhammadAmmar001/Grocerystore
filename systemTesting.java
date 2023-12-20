@@ -1,17 +1,24 @@
 import org.junit.Test;
-
 import static org.junit.Assert.*;
-
 import java.util.Arrays;
-
 import javax.swing.ListModel;
-
 import org.junit.Assert;
 
+/**
+ * Test class to perform system-level testing on the grocery store application.
+ */
 public class systemTesting {
 
+    /**
+     * Test case to validate various functionalities of the grocery store
+     * application:
+     * - Registration, login, menu navigation, item search, cart management, and
+     * shopping history.
+     */
     @Test
     public void testRegisterUser() {
+
+        // Initializing Registration frame with user details
         Registration frame = new Registration();
         frame.nameTextField.setText("John Doe");
         frame.mobileTextField.setText("12345678890");
@@ -24,6 +31,7 @@ public class systemTesting {
         frame.termsCheckBox.setSelected(true);
         frame.submitButton.doClick();
 
+        // Validating successful registration
         assertTrue(frame.resultTextArea.getText().contains("Registration Successfully.."));
 
         LoginFrame loginFrame = new LoginFrame();
@@ -48,6 +56,7 @@ public class systemTesting {
         dynamicSearch.search.setText("tomato");
         dynamicSearch.submit.doClick();
 
+        // Verifying if the search result contains the expected item "tomato"
         ListModel<String> listModel = dynamicSearch.available_items.getModel();
         int size = listModel.getSize();
         String[] listedItems = new String[size];
@@ -61,17 +70,14 @@ public class systemTesting {
         dynamicSearch.addcart.doClick();
 
         menu.cart.doClick();
+
+        // Accessing and validating shopping history display
         try {
             manage_cart manageCart = new manage_cart();
-
             manageCart.proceed_order.doClick();
-
             assertEquals("Rs.1900 is your total bill", manageCart.Totalbill.getText());
-
             history history = new history();
-
             assertEquals("SHOPING HISTORY", history.hist.getTitle());
-
         } catch (Exception e) {
         }
     }
