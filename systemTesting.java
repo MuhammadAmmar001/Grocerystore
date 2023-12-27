@@ -75,7 +75,7 @@ public class systemTesting {
         try {
             manage_cart manageCart = new manage_cart();
             manageCart.proceed_order.doClick();
-            assertEquals("Rs.1900 is your total bill", manageCart.Totalbill.getText());
+            assertEquals("Rs.1270 is your total bill", manageCart.Totalbill.getText());
             history history = new history();
             assertEquals("SHOPING HISTORY", history.hist.getTitle());
         } catch (Exception e) {

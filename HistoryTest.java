@@ -21,7 +21,8 @@ public class HistoryTest {
     public void testRecordFileRead() throws FileNotFoundException {
         history history = new history();
         String expectedRecord = "";
-        Scanner scanner = new Scanner(new File("D:\\NUST\\Semester 5\\SOFTWARE CONSTRUCTION\\Project\\grocerystore\\src\\record.txt"));
+        Scanner scanner = new Scanner(
+                new File("D:\\NUST\\Semester 5\\SOFTWARE CONSTRUCTION\\Project\\grocerystore\\src\\record.txt"));
         while (scanner.hasNextLine()) {
             expectedRecord += scanner.nextLine() + "\n";
         }

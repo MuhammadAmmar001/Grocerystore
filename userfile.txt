@@ -14,3 +14,8 @@ Name : {John Doe} Mobile : 12345678890 Password : {pass@5Sword123} Gender : Male
 Name : {John Doe} Mobile : 12345678890 Password : {pass@5Sword123} Gender : Male DOB : 2/6/1933 Address : 123 Main Street
 Name : {John Doe} Mobile : 12345678890 Password : {pass@5Sword123} Gender : Male DOB : 2/6/1933 Address : 123 Main Street
 Name : {John Doe} Mobile : 12345678890 Password : {pass@5Sword123} Gender : Male DOB : 2/6/1933 Address : 123 Main Street
+Name : {John Doe} Mobile : 12345678890 Password : {pass@5Sword123} Gender : Male DOB : 2/6/1933 Address : 123 Main Street
+Name : {John Doe} Mobile : 12345679890 Password : {StrongPassword123!} Gender : Male DOB : 1/1/1923 Address : 123 Main Street
+Name : {John Doe} Mobile : 12345678890 Password : {pass@5Sword123} Gender : Male DOB : 2/6/1933 Address : 123 Main Street
+Name : {John Doe} Mobile : 12345678890 Password : {pass@5Sword123} Gender : Male DOB : 2/6/1933 Address : 123 Main Street
+Name : {John Doe} Mobile : 12345678890 Password : {pass@5Sword123} Gender : Male DOB : 2/6/1933 Address : 123 Main Street

@@ -9,11 +9,3 @@
 [plates large(6)  price:1500][spoons(6)  price:500]  DATE:  2022/07/14 20:16:41
 [steel pot small  price:500]  DATE:  2022/07/14 21:58:16
 [spoons(6)  price:500]  DATE:  2023/12/16 12:23:40
-[milk(1litre)  price:160]  DATE:  2023/12/17 19:51:34
-[brinjal(1kg)  price:100][spoons(6)  price:500]  DATE:  2023/12/18 00:47:53
-[brinjal(1kg)  price:100][spoons(6)  price:500][spoons(6)  price:500][steel pot large  price:800]  DATE:  2023/12/18 01:30:33
-[brinjal(1kg)  price:100][spoons(6)  price:500][spoons(6)  price:500][steel pot large  price:800]  DATE:  2023/12/18 01:31:37
-[brinjal(1kg)  price:100][spoons(6)  price:500][spoons(6)  price:500][steel pot large  price:800]  DATE:  2023/12/18 01:32:00
-[brinjal(1kg)  price:100][spoons(6)  price:500][spoons(6)  price:500][steel pot large  price:800]  DATE:  2023/12/18 01:32:14
-[brinjal(1kg)  price:100][spoons(6)  price:500][spoons(6)  price:500][steel pot large  price:800]  DATE:  2023/12/18 01:32:25
-[brinjal(1kg)  price:100][spoons(6)  price:500][spoons(6)  price:500][steel pot large  price:800]  DATE:  2023/12/18 01:33:26
