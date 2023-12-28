@@ -6,10 +6,7 @@ import java.io.FileNotFoundException;
 import static javax.swing.WindowConstants.EXIT_ON_CLOSE;
 
 /**
- * Represents a graphical user interface for a grocery store menu.
- * Provides buttons to access different sections of the store and
- * functionalities.
- * Implements ActionListener to handle button click events.
+ * Represents the main menu of a grocery store application.
  */
 public class MENU implements ActionListener {
     JFrame menu;
@@ -20,9 +17,7 @@ public class MENU implements ActionListener {
     int height = (int) size.getHeight();
 
     /**
-     * Constructor initializing the grocery store menu window with buttons.
-     * Sets up various buttons to access different sections of the store.
-     * Handles button click events for navigation within the store.
+     * Constructor to initialize the main menu interface.
      */
     MENU() {
         menu = new JFrame("MENU");
@@ -73,17 +68,16 @@ public class MENU implements ActionListener {
     }
 
     /**
-     * Main method to initialize the grocery store menu.
-     *
-     * @param args Command-line arguments (not used here).
+     * Main method to instantiate and display the MENU.
+     * 
+     * @param args Command-line arguments.
      */
     public static void main(String[] args) {
         MENU menu1 = new MENU();
     }
 
     /**
-     * Sets the background image for the grocery store menu window.
-     * Loads and sets an image as the background for the menu window.
+     * Sets the background image of the menu.
      */
     public void setBackgroundImage() {
         ImageIcon image = new ImageIcon("D:\\NUST\\Semester 2\\OOP\\Project\\src\\bg.png");
@@ -93,12 +87,9 @@ public class MENU implements ActionListener {
     }
 
     /**
-     * Handles button click events triggered by various store section buttons.
-     * Creates instances of different classes (dynamic_search, manage_cart, history)
-     * based on button clicks.
-     * Disposes of the current menu window after triggering actions.
-     *
-     * @param e ActionEvent triggered by button clicks.
+     * Handles button actions in the main menu.
+     * 
+     * @param e The ActionEvent triggering this method.
      */
     @Override
     public void actionPerformed(ActionEvent e) {

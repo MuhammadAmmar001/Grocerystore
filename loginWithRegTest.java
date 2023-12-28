@@ -2,21 +2,14 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Test class to verify the login process with registered credentials in
- * LoginFrame.
+ * Test class to validate login functionality after successful registration.
  */
 public class loginWithRegTest {
 
     /**
-     * Test case to validate successful registration followed by login using the
-     * registered credentials.
-     * - Initializes LoginFrame and Registration.
-     * - Simulates user registration by setting up required details.
-     * - Verifies if the registration process is successful.
-     * - Simulates login with registered credentials.
-     * - Asserts that the status label indicates successful login.
+     * Test case to validate successful registration and subsequent login.
      *
-     * @throws Exception if there's an issue with the registration process.
+     * @throws Exception if any exception occurs during the test.
      */
     @Test
     public void testSuccessfulRegistrationLogin() throws Exception {
@@ -45,12 +38,9 @@ public class loginWithRegTest {
     }
 
     /**
-     * Test case to validate login failure with incorrect password.
-     * - Initializes LoginFrame.
-     * - Simulates user login with incorrect password.
-     * - Asserts that the status label indicates wrong password.
+     * Test case to validate login failure with an incorrect password.
      *
-     * @throws Exception if there's an issue with the login process.
+     * @throws Exception if any exception occurs during the test.
      */
     @Test
     public void testInvalidPasswordLogin() throws Exception {

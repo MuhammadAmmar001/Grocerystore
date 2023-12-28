@@ -5,21 +5,21 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 /**
- * Test class to validate functionalities of the History class.
+ * Test class for testing the functionality of the History class.
  */
 public class HistoryTest {
 
     /**
-     * Test case to verify the reading of the record file and its content display.
-     * - Creates a history object to read and display the record file content.
-     * - Compares the content displayed in the JTextArea with the expected content
-     * read from the file.
+     * Test case to verify if the record file is read correctly and displayed in the JTextArea.
      *
      * @throws FileNotFoundException if the record file is not found.
      */
     @Test
     public void testRecordFileRead() throws FileNotFoundException {
+        // Instantiate the history class
         history history = new history();
+
+        // Read the expected content from the record file
         String expectedRecord = "";
         Scanner scanner = new Scanner(
                 new File("D:\\NUST\\Semester 5\\SOFTWARE CONSTRUCTION\\Project\\grocerystore\\src\\record.txt"));
@@ -27,22 +27,25 @@ public class HistoryTest {
             expectedRecord += scanner.nextLine() + "\n";
         }
         scanner.close();
+
+        // Assert if the content displayed in the JTextArea matches the expected content
         Assert.assertEquals(expectedRecord, history.RECORD.getText());
     }
 
     /**
-     * Test case to verify the functionality of the back button click.
-     * - Creates a history object.
-     * - Simulates a click on the back button.
-     * - Verifies if the history window is no longer visible after the click.
+     * Test case to verify the functionality of the back button.
      *
      * @throws FileNotFoundException if the record file is not found.
      */
     @Test
     public void testBackButtonClick() throws FileNotFoundException {
+        // Instantiate the history class
         history history = new history();
+
+        // Simulate a click on the back button
         history.back.doClick();
+
+        // Assert if the history window is not visible after the back button click
         Assert.assertFalse(history.hist.isVisible());
     }
-
 }

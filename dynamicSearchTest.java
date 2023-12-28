@@ -5,15 +5,12 @@ import javax.swing.SwingUtilities;
 import org.junit.Assert;
 
 /**
- * This class contains test cases for validating the functionality of the
- * dynamic_search class.
+ * Test class for testing the dynamic search functionality.
  */
 public class dynamicSearchTest {
 
     /**
-     * Test case to verify the behavior when the search field is empty.
-     * - Verifies the "not found" message is visible.
-     * - Verifies the product list is not visible.
+     * Test case to validate behavior when performing an empty search.
      */
     @Test
     public void testEmptySearch() {
@@ -33,9 +30,7 @@ public class dynamicSearchTest {
     }
 
     /**
-     * Test case to verify the behavior when a valid search term for an existing
-     * product is entered.
-     * - Verifies that the product list contains the searched item.
+     * Test case to validate behavior when performing a valid search for an existing product.
      */
     @Test
     public void testValidSearchExistingProduct() {
@@ -57,10 +52,7 @@ public class dynamicSearchTest {
     }
 
     /**
-     * Test case to verify the behavior when a valid search term for a nonexistent
-     * product is entered.
-     * - Verifies the "not found" message is visible.
-     * - Verifies the product list is not visible.
+     * Test case to validate behavior when performing a valid search for a non-existent product.
      */
     @Test
     public void testValidSearchNonexistentProduct() {
@@ -75,5 +67,4 @@ public class dynamicSearchTest {
         // Assert product list is not visible
         Assert.assertFalse(search.available_items.isVisible());
     }
-
 }

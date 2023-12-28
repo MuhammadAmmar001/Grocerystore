@@ -3,12 +3,13 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 /**
- * Test suite for the Registration class, validating user registration scenarios.
+ * This class contains JUnit test cases for the Registration class.
+ * It evaluates various scenarios related to user registration form validation and submission.
  */
 public class RegistrationTest {
 
     /**
-     * Tests if an empty name field triggers the expected error message.
+     * Tests the behavior when the name field is left empty during submission.
      */
     @Test
     public void testEmptyNameField() {
@@ -24,7 +25,7 @@ public class RegistrationTest {
     }
 
     /**
-     * Tests if an invalid mobile number triggers the expected error message.
+     * Tests the behavior when an invalid mobile number is provided.
      */
     @Test
     public void testInvalidMobileNumber() {
@@ -39,7 +40,7 @@ public class RegistrationTest {
     }
 
     /**
-     * Tests if an empty password field triggers the expected error message.
+     * Tests the behavior when the password field is left empty during submission.
      */
     @Test
     public void testEmptyPasswordField() {
@@ -56,7 +57,7 @@ public class RegistrationTest {
     }
 
     /**
-     * Tests if an empty address field triggers the expected error message.
+     * Tests the behavior when the address field is left empty during submission.
      */
     @Test
     public void testEmptyAddress() {
@@ -71,7 +72,7 @@ public class RegistrationTest {
     }
 
     /**
-     * Tests if not accepting terms triggers the expected error message.
+     * Tests the behavior when the terms and conditions are not accepted during submission.
      */
     @Test
     public void testTermsNotAccepted() {
@@ -86,7 +87,7 @@ public class RegistrationTest {
     }
 
     /**
-     * Tests a successful registration scenario.
+     * Tests a successful registration scenario with valid data provided.
      */
     @Test
     public void testSuccessfulRegistration() {
@@ -106,7 +107,7 @@ public class RegistrationTest {
     }
 
     /**
-     * Tests if the reset button clears all form fields.
+     * Tests the reset functionality of the form elements.
      */
     @Test
     public void testResetForm() {

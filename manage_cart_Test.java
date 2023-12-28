@@ -1,22 +1,18 @@
 import static org.junit.Assert.assertFalse;
-import java.util.Arrays;
 import static org.junit.Assert.assertEquals;
+import java.util.Arrays;
 import org.junit.Test;
 
 /**
- * Test class to validate cart management functionality in manage_cart.
+ * Tests for the functionality of the shopping cart management.
  */
 public class manage_cart_Test {
 
     /**
-     * Test case to validate item removal from the cart upon completing an order.
-     * - Initializes manage_cart and adds a test item to the cart.
-     * - Simulates completing an order.
-     * - Asserts that the test item is removed from the cart.
+     * Tests the removal of an item from the cart when an order is completed.
      */
     @Test
     public void testItemRemovalOnOrderCompletion() {
-        // Setup
         try {
             manage_cart cart = new manage_cart();
             String testItem = "Pizza: 1: 100";
@@ -28,19 +24,15 @@ public class manage_cart_Test {
             // Assert that the test item is removed from the cart
             assertFalse(Arrays.asList(cart.CART).contains(testItem));
         } catch (Exception e) {
+            // Handle exceptions, if any
         }
     }
 
     /**
-     * Test case to validate total bill calculation upon completing an order.
-     * - Initializes manage_cart and adds two items to the cart.
-     * - Simulates completing an order.
-     * - Parses and extracts the displayed total bill.
-     * - Asserts that the calculated bill matches the expected total.
+     * Tests the calculation of the total bill in the cart.
      */
     @Test
     public void testTotalBillCalculation() {
-        // Setup
         try {
             manage_cart cart = new manage_cart();
             String item1 = "Pizza: 1: 100";
@@ -58,7 +50,7 @@ public class manage_cart_Test {
             int expectedBill = Integer.parseInt(item1.split(":")[1]) + Integer.parseInt(item2.split(":")[1]);
             assertEquals(expectedBill, actualBill);
         } catch (Exception e) {
+            // Handle exceptions, if any
         }
     }
-
 }

@@ -5,15 +5,14 @@ import javax.swing.ListModel;
 import org.junit.Assert;
 
 /**
- * Test class to perform system-level testing on the grocery store application.
+ * Contains a suite of system-level tests that validate end-to-end functionality
+ * by simulating user actions and verifying different parts of the application.
  */
 public class systemTesting {
 
     /**
-     * Test case to validate various functionalities of the grocery store
-     * application:
-     * - Registration, login, menu navigation, item search, cart management, and
-     * shopping history.
+     * Simulates user registration, login, item search, cart management,
+     * and shopping history display to validate the overall system behavior.
      */
     @Test
     public void testRegisterUser() {

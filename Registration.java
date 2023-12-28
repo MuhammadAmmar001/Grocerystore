@@ -7,10 +7,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Calendar;
 
-/**
- * Represents a registration form for user sign-up.
- * Allows users to input personal details for registration.
- */
+
 class Registration extends JFrame implements ActionListener {
 
     // Declaration of various form elements
@@ -22,20 +19,14 @@ class Registration extends JFrame implements ActionListener {
     public JCheckBox termsCheckBox;
     public JButton submitButton, resetButton, BackToLogin;
 
-    /**
-     * Constructor for the registration form.
-     * Initializes and sets up the user interface elements.
-     */
+    
     public Registration() {
         setVisible(true);
         setExtendedState(JFrame.MAXIMIZED_BOTH);
         initializeUI();
     }
 
-    /**
-     * Method to initialize the user interface for the registration form.
-     * Sets up the layout and components of the registration form.
-     */
+    
     private void initializeUI() {
 
         // Container setup and layout handling
@@ -160,9 +151,9 @@ class Registration extends JFrame implements ActionListener {
     }
 
     /**
-     * ActionListener implementation to handle button clicks and form submissions.
-     * 
-     * @param e ActionEvent triggered by user interaction.
+     * Handles action events performed on the registration form.
+     *
+     * @param e ActionEvent representing the user's interaction with form elements.
      */
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -176,7 +167,7 @@ class Registration extends JFrame implements ActionListener {
     }
 
     /**
-     * Resets all form fields to their initial empty state.
+     * Resets all input fields and result area to default values.
      */
     private void reset() {
         nameTextField.setText("");
@@ -194,8 +185,8 @@ class Registration extends JFrame implements ActionListener {
     }
 
     /**
-     * Handles form submission, validates user inputs, and displays registration details.
-     * Processes user inputs for registration and writes the data to a file.
+     * Processes the registration data and writes it to a file.
+     * Displays the registration details in the resultTextArea.
      */
     private void submit() {
         // Clear Result Area
@@ -275,6 +266,7 @@ class Registration extends JFrame implements ActionListener {
 
     /**
      * Validates the mobile number input.
+     *
      * @param mobile Mobile number string to be validated.
      * @return True if the mobile number is a valid 11-digit number; otherwise, false.
      */
@@ -284,6 +276,7 @@ class Registration extends JFrame implements ActionListener {
 
     /**
      * Validates the strength of the password input.
+     *
      * @param password Password string to be validated.
      * @return True if the password meets the specified criteria; otherwise, false.
      */
@@ -293,8 +286,7 @@ class Registration extends JFrame implements ActionListener {
     }
 
     /**
-     * Processes the registration by collecting form data and writing it to a file.
-     * Displays the registration details in the resultTextArea.
+    * Processes the user's registration data and handles writing to a file.
      */
     private void processRegistration() {
         if (termsCheckBox.isSelected()) {
