@@ -12,8 +12,7 @@ import java.util.Scanner;
 
 /**
  * Represents a dynamic search window for an ordering system.
- * Allows users to search for items, add them to the cart, view the cart, and
- * navigate.
+ * Allows users to search for items, add them to the cart, view the cart, and navigate.
  */
 public class dynamic_search implements ActionListener {
 
@@ -221,7 +220,7 @@ public class dynamic_search implements ActionListener {
 
     /**
      * The main entry point for the program.
-     * 
+     *
      * @param args The command line arguments (not used here).
      */
     public static void main(String[] args) {

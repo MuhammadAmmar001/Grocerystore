@@ -7,8 +7,7 @@ import java.util.Scanner;
 import org.junit.Test;
 
 /**
- * Test class to validate the functionality of adding and removing items to/from
- * the cart.
+ * This class contains tests related to adding and removing items from the cart.
  */
 public class dSearchWithCartTest {
 
@@ -63,7 +62,7 @@ public class dSearchWithCartTest {
             // Verify that the spoon is no longer in the cart
             assertFalse(Arrays.asList(cart.CART).contains("spoon"));
         } catch (Exception e) {
+            // Exception handling if any issue occurs
         }
     }
-
 }
